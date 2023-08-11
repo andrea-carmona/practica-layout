@@ -1,0 +1,39 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100vh;
+  }
+   
+.container > div {
+  margin: 20px;
+  background: yellowgreen;
+  border: 5px solid black;
+}
+
+.container > div:nth-child(odd) {
+  width: 10%;
+  }
+
+.container > div:nth-child(even) {
+  width: 20%;
+  }
+
+.container > div:nth-child(2),
+.container > div:nth-child(4),
+.container > div:nth-child(9) {
+  width: 60%;
+  }  
